@@ -1,2 +1,4 @@
 ﻿go-gin-crud/tmp
 go-gin-crud/env.yaml
+*.env
+next14_firebase/next-ts-firebase/.firebase

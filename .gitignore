@@ -2,3 +2,4 @@
 go-gin-crud/env.yaml
 *.env
 next14_firebase/next-ts-firebase/.firebase
+socket-io/server/node_modules

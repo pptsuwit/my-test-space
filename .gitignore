@@ -4,3 +4,5 @@ go-gin-crud/env.yaml
 next14_firebase/next-ts-firebase/.firebase
 socket-io/server/node_modules
 mini-project/next-socket-io/server/node_modules
+*.git
+*/node_modules

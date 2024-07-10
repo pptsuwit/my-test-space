@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
+
+iframe {
+  width: 100svw !important;
+  height: 100svh !important;
+  object-fit: cover;
+  overflow: hidden !important;
+}
+
+/* header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+header span {
+  font-weight: 800;
+  font-size: 7rem;
+  display: block;
+} */
+
+.description {
+  position: absolute;
+  bottom: 5%;
+  width: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  opacity: 0.8;
+  padding: 1.5rem;
+}
+
+.description p {
+  text-align: justify;
+  max-width: 45rem;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.copyright {
+  font-size: 0.75rem;
+}
+
+.copyright a {
+  color: aquamarine;
+  /* text-underline-offset: 1.8px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .description {
+    position: absolute;
+    width: 90vw;
+    bottom: 12%;
+    border-radius: 20px 20px 0 0;
+    margin: auto;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    /* visibility: hidden; */
+    position: absolute;
+    width: 90vw;
+    bottom: 10%;
+    border-radius: 20px 20px 0 0;
+    margin: auto;
+    padding: 0.6rem 1.5rem;
+  }
+}

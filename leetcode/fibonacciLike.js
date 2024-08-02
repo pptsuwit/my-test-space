@@ -8,28 +8,60 @@
 // output
 // 3
 
+// function fibonacciLike(a1, a2, n) {
+//   if (n === 1) {
+//     return a1;
+//   } else if (n === 2) {
+//     return a2;
+//   } else {
+//     let prev1 = a1;
+//     let prev2 = a2;
+//     let current;
+//     for (let i = 3; i <= n; i++) {
+//       current = prev1 + prev2;
+//       prev1 = prev2;
+//       prev2 = current;
+//     }
+//     return current;
+//   }
+// }
+// function fibonacciLike(a1, a2, n) {
+//   if (n === 1) return a1;
+//   else if (n === 2) return a2;
+//   else {
+//     let result = [0, a1, a2];
+//     for (let i = 3; i <= n; i++) {
+//       result[i] = result[i - 1] + result[i - 2];
+//     }
+//     return result[n];
+//   }
+// }
 function fibonacciLike(a1, a2, n) {
-  if (n === 1) {
-    return a1;
-  } else if (n === 2) {
-    return a2;
-  } else {
-    let prev1 = a1;
-    let prev2 = a2;
-    let current;
-    for (let i = 3; i <= n; i++) {
-      current = prev1 + prev2;
-      prev1 = prev2;
-      prev2 = current;
-    }
-    return current;
-  }
-}
+  // If n is 1 or 2, return the corresponding initial value
+  if (n === 1) return a1;
+  if (n === 2) return a2;
 
+  // Initialize the array with a placeholder at index 0 and the first two elements
+  let a = [0, a1, a2];
+
+  // Compute the sequence up to the n-th element
+  for (let i = 3; i <= n; i++) {
+    a[i] = a[i - 1] + a[i - 2];
+  }
+
+  // Return the n-th element
+  return a[n];
+}
 // Example input
-const input = "4 2 4";
+const input = "1 2 4";
 const [a1, a2, n] = input.split(" ").map(Number);
-// const [a1, a2, n] = input.split(" ").map(String);
 
 // Output
 console.log(fibonacciLike(a1, a2, n));
+
+// 4;
+// 2;
+// 3 = 6;
+// 4 = 8;
+// 5 = 14;
+// 6 = 22;
